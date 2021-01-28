@@ -1,0 +1,98 @@
+@import "../../mixins"
+
+#projects
+
+    margin: 0 auto
+    .projects-container
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+        .project
+            // min-width: 550px
+            width: 33.33%
+            height: 450px
+            overflow: hidden
+            position: relative
+            opacity: 1
+            background: #111112
+            transition: all 1s
+            @include medium
+                width: 50%
+            @include small
+                width: 100%
+
+
+            img
+                width: 100%
+                height: auto
+                min-height: 240px
+                filter: grayscale(100%)
+                opacity: 0.1
+                transition: all .5s ease
+
+            &:before
+                content: attr(data-folio)
+                line-height: 1em
+                text-align: center
+                color: #ddd
+                display: block
+                padding: 0.22em 0 0 0
+                width: 1.625em
+                height: 1.625em
+                border: 0.1em solid #ddd
+                border-radius: 50%
+                position: absolute
+                left: 50%
+                top: 50%
+                margin: -0.8em 0 0 -0.8em
+                transition: all .5s ease
+
+            &__caption
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                text-align: left
+                background-color: transparent
+                padding: 15px 15px 0px
+                transition: all .5s ease
+                transform: translateY(55px)
+
+                .project-title
+                    text-transform: uppercase
+                    font-size: 1.125rem
+                    font-weight: 600
+                    letter-spacing: 1.3px
+
+                    &::after
+                        content: " "
+                        height: 0
+                        display: block
+                        border: 1px solid grey
+                        width: 150%
+                        margin: 5px 0px 15px
+
+                .project-desc
+                    display: flex
+                    justify-content: space-between
+
+                    .project-tec
+                        font-size: 1.05rem
+
+                    .project-buttons
+                        svg
+                            font-size: 1.5rem
+                            margin: 0px 10px
+
+            &:hover
+                img
+                    filter: grayscale(0%)
+                    opacity: 1
+
+                &::before
+                    transform: scale(2)
+
+                .project__caption
+                    background: rgba(0, 0, 0, 0.775)
+                    transform: translateY(0px)
