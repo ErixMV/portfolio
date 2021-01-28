@@ -1,7 +1,8 @@
 import "./banner.sass";
-import { GitHub, LinkedIn, Person, ExpandMore } from '@material-ui/icons';
+import { PlayArrowOutlined } from '@material-ui/icons';
 
 export const Banner = () => {
+
     return (
         <div id="banner">
             <div className="opacity">
@@ -10,9 +11,12 @@ export const Banner = () => {
                         <img src="/static/erix.png" alt="profile" />
                         <div className="name">Erix Mamani Villacresis</div>
                         <div className="subtitle">Web Developer</div>
-                        <div><GitHub /><LinkedIn /></div>
+                        <div className="primary-buttons">
+                            <a href="/static/CV_Erix_2020.pdf"><button>Resume</button></a>
+                            <a href="#contact"><button>Contact</button></a>
+                        </div>
                     </div>
-                    <div className="arrow-bottom"><ExpandMore /></div>
+                    <div className="arrow-bottom"><PlayArrowOutlined /></div>
                 </div>
             </div>
         </div>

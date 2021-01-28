@@ -1,3 +1,11 @@
+@import "../../mixins"
+
+@keyframes bgLoad
+    0%
+        background-size: 150%
+    100%
+        background-size: 100%
+
 #banner
     background: green
     height: 100vh
@@ -7,6 +15,11 @@
     background-image: url(/static/images/bg.jpg)
     background-position: center
     background-size: cover
+    -webkit-animation: bgLoad 2s
+    -moz-animation: bgLoad 2s
+    -ms-animation: bgLoad 2s
+    -o-animation: bgLoad 2s
+    animation: bgLoad 2s
 
     .opacity
         background: rgba(0, 0, 0, 0.7)
@@ -18,18 +31,31 @@
         .banner-content
             align-self: center
             width: 70%
+            @include small
+                width: 85%
 
             .banner-data
                 text-align: center
                 img
                     max-width: 250px
                     border-radius: 50%
+                    @include small
+                        max-width: 150px
                 div
                     text-transform: uppercase
+
+                .name, .subtitle, .subtitle:after, .subtitle:before
+                    background: linear-gradient(to bottom,#eee, #888)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
 
                 .name
                     font-size: 3rem
                     margin: 30px
+                    @include medium
+                        font-size: 2rem
+                    @include small
+                        font-size: 1.7rem
 
                 .subtitle
                     margin: 0px 10px
@@ -42,18 +68,56 @@
                         border: 2px solid #ddd
                         margin: 0px 15px 7px
 
+                .primary-buttons
+                    position: relative
+                    bottom: -30px
+
+                    a
+                        margin-left: 10px
+                        margin-right: 10px
+                        padding: 5px 10px
+                        @include small
+                            display: block
+
+                        button
+                            padding: inherit
+                            // background: transparent
+                            border: 0px
+                            -webkit-box-shadow: 0px 0px 0px 1px rgba(204,204,204,1)
+                            -moz-box-shadow: 0px 0px 0px 1px rgba(204,204,204,1)
+                            box-shadow: 0px 0px 0px 1px rgba(204,204,204,1)
+                            letter-spacing: 3px
+                            text-transform: uppercase
+                            font-size: 1.1rem
+                            font-weight: 500
+                            background: linear-gradient(to bottom,#eee, #888)
+                            -webkit-background-clip: text
+                            -webkit-text-fill-color: transparent
+
+                            @include small
+                                width: 200px
+
+                            &:hover
+                                -webkit-background-clip: border-box
+                                -webkit-text-fill-color: #333
+                                background: linear-gradient(to bottom,#eee, #888)
+                                color: #333
+
             .arrow-bottom
-                position:  absolute
-                bottom: 0
+                position: absolute
+                bottom: 10px
                 left: 0
                 right: 0
                 text-align: center
                 animation: arrowdown 1s infinite
+
+                svg
+                    transform: rotate(90deg)
 
 @keyframes arrowdown
     0%
         transform: translateY(0px)
     50%
         transform: translateY(5px)
-    100%    
+    100%
         transform: translateY(0px)
