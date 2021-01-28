@@ -1,0 +1,32 @@
+@mixin transition($duration)
+    -webkit-transition: $duration
+    -moz-transition: $duration
+    -ms-transition: $duration
+    -o-transition: $duration
+    transition: $duration !important
+
+.logo-component
+    font-size: 2.8em !important
+.logo-left
+    position: relative
+    font-size: 1em !important
+    // right: -27px
+
+.logo-right
+    position: relative
+    font-size: 1.3em !important
+    // left: -27px
+
+.person-icon
+    position: relative
+    font-size: 1.8em !important
+    border-radius: 50%
+    border: 1px solid #ddd
+    padding: 3px
+    background: transparent
+    fill: currentColor
+    @include transition(.4s)
+
+    &:hover
+        fill: #333333
+        background: lightgray
