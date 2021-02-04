@@ -12,7 +12,7 @@ export const Banner = () => {
                         <div className="name">Erix Mamani Villacresis</div>
                         <div className="subtitle">Web Developer</div>
                         <div className="primary-buttons">
-                            <a href="/static/CV_Erix_2020.pdf"><button>Resume</button></a>
+                            <a target="_BLANK"  href="/static/CV_Erix_2020.pdf"><button>Resume</button></a>
                             <a href="#contact"><button>Contact</button></a>
                         </div>
                     </div>
