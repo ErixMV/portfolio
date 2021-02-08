@@ -20,6 +20,8 @@ import {ReactComponent as TypeScriptIcon } from "../../assets/typescript.svg"
 import {ReactComponent as ReduxIcon } from "../../assets/redux.svg"
 import {ReactComponent as JestIcon } from "../../assets/jest.svg"
 import {ReactComponent as JQueryIcon } from "../../assets/jquery.svg"
+import {ReactComponent as IllustratorIcon } from "../../assets/illustrator.svg"
+import {ReactComponent as PhotoshopIcon } from "../../assets/photoshop.svg"
 
 export const About = () => {
     return (
@@ -45,8 +47,8 @@ export const About = () => {
                         <div className="tech-icons">
                             <PythonIcon/>
                             <PhpIcon/>
-                            <JavaScriptIcon/>
-                            <JavaIcon/>
+                            <JavaScriptIcon style={{borderRadius: "15px"}}/>
+                            <JavaIcon style= {{background: "#fff", padding: "5px", borderRadius: "15px"}}/>
                         </div>
                     </div>
                 </div>
@@ -60,15 +62,6 @@ export const About = () => {
                             <NextIcon className="white"/>
                             <LaravelIcon/>
                             <AspNetIcon/>
-                        </div>
-                    </div>
-                </div>
-                <div className="tech">
-                    <div className="tech-section">
-                        <div className="tech-title">What I am learning now</div>
-                        <div className="tech-icons">
-                            <SpringIcon/>
-                            <JestIcon/>
                         </div>
                     </div>
                 </div>
@@ -95,9 +88,20 @@ export const About = () => {
                         <div className="tech-title">Others</div>
                         <div className="tech-icons">
                             <NodeIcon/>
-                            <TypeScriptIcon/>
+                            <TypeScriptIcon style={{borderRadius: "15px"}}/>
                             <ReduxIcon/>
                             <JQueryIcon/>
+                        </div>
+                    </div>
+                </div>
+                <div className="tech">
+                    <div className="tech-section">
+                        <div className="tech-title">What I am learning now</div>
+                        <div className="tech-icons">
+                            <SpringIcon/>
+                            <JestIcon/>
+                            <PhotoshopIcon/>
+                            <IllustratorIcon/>
                         </div>
                     </div>
                 </div>
