@@ -1,6 +1,6 @@
 #contact
     width: 85%
-    margin: auto
+    margin: 0 auto
     padding: 50px 0px
 
     .section-title
@@ -8,23 +8,38 @@
         text-transform: uppercase
         line-height: 2
         letter-spacing: 2px
+        font-weight: 600
+        
+    .section-body
+        display: flex
+        justify-content: space-evenly
 
-    .section-desc
-        font-size: 1.2rem
-        line-height: 1.5
-        text-align: justify
 
-    .links
-        button
-            background: transparent
-            border: 1px solid red
-            padding: 10px 10px
-            display: flex
-            border-radius: 50%
-            transition: 1s all
+        .section-desc
+            font-size: 1.2rem
+            line-height: 1.5
+            text-align: justify
+            width: 75%
 
-            svg
-                margin: auto
-                align-self: center
-                position: relative
+        .sep
+            height: inherit
+            width: 0px
+            border: 1px solid #ccc
+
+        .contact-links
+            width: 25%
+
+            .links
+                button
+                    background: transparent
+                    border: 1px solid red
+                    padding: 10px 10px
+                    display: flex
+                    border-radius: 50%
+                    transition: 1s all
+
+                    svg
+                        margin: auto
+                        align-self: center
+                        position: relative
 
