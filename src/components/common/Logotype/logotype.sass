@@ -17,6 +17,9 @@
     font-size: 1.3em !important
     // left: -27px
 
+.to-top
+    pointer-events: none
+
 .person-icon
     position: relative
     font-size: 1.8em !important
@@ -30,3 +33,15 @@
     &:hover
         fill: #333333
         background: lightgray
+        transform: rotate(630deg)
+        animation: return-top 1s
+
+    @keyframes return-top
+        0%
+            transform: rotate(0deg)
+        100%
+            transform: rotate(630deg)
+
+html:not([data-scroll="0"])
+    .to-top
+        pointer-events: all
