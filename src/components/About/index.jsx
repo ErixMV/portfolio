@@ -37,6 +37,7 @@ export const About = () => {
                     My goal is to develop unique websites, apps or services, improve my programming skills 
                     and eventually develop my personal brand.
                 </p>
+                <p>My hobbies are astronomy, reading books and spending time with my friends.</p>
 
 
             </div>
