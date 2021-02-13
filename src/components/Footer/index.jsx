@@ -9,11 +9,11 @@ export const Footer = () => {
                 <div className="footer-credits">
                     <p>© 2021 Erix Mamani Villacresis. All rights reserved.</p>
                 </div>
-                <div className="footer-icons">
+                {/* <div className="footer-icons">
                     <a href="https://github.com/ErixMV" target="_BLANK" rel="noreferrer"><GitHub /></a>
                     <a href="https://www.linkedin.com/in/erixmamani/" target="_BLANK" rel="noreferrer"><LinkedIn /></a>
                     <a href="mailto:erixmv022@gmail.com"><MailOutline /></a>
-                </div>
+                </div> */}
             </div>
         </footer>
     )
