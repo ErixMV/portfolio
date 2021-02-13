@@ -1,7 +1,6 @@
 @import "../../mixins"
 
 #projects
-
     margin: 0 auto
     .projects-container
         display: flex
@@ -84,9 +83,14 @@
                         svg
                             font-size: 1.5rem
                             margin: 0px 10px
+                            opacity: .75
+
+                            &:hover
+                                opacity: 1
+                                transform: translateY(-3px)
 
             &:hover
-                img
+                img, a
                     filter: grayscale(0%)
                     opacity: 1
 
