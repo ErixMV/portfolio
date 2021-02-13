@@ -1,6 +1,6 @@
 import "./footer.sass"
 
-import { GitHub, LinkedIn, MailOutline } from '@material-ui/icons';
+// import { GitHub, LinkedIn, MailOutline } from '@material-ui/icons';
 
 export const Footer = () => {
     return (
