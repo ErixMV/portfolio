@@ -3,13 +3,19 @@
     left: 0
     right: 0
     top: 0
+    z-index: 1000
+    min-height: 86px
     .header__inner
         width: 95%
         margin: 0 auto
         display: flex
         justify-content: space-between
         padding: 15px 0px
-        
+
+        .scroll-op
+            svg
+                opacity: 0
+
         .large-menu
             ul
                 display: flex
@@ -17,3 +23,9 @@
 
                 li
                     margin: 0px 20px
+
+html:not([data-scroll="0"])
+    #header
+        background: rgba(0,0,0,.75)
+        .header__inner .scroll-op svg
+            opacity: 1
