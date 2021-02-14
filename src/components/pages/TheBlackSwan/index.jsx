@@ -19,8 +19,8 @@ export const TheBlackSwan = ({ title = "The Black Swan" }) => {
                     <h2>{title}</h2>
                 </div>
                 <div className="caption" style={{ textAlign: "center", padding: "30px 0px" }}>
-                    <div style={{ width: "600px", height: "400px", overflow: "hidden", margin: "auto" }}>
-                        <img style={{ position: "relative", left: "-22%" }} src="/static/blackswan.png" alt="" />
+                    <div className="img-container">
+                        <img src="/static/blackswan.png" alt="" />
                     </div>
                     <div style={{ padding: "20px 0px 0px" }}>
                         <a className="link" href="https://github.com/ErixMV/BlackSwan" target="_BLANK" rel="noreferrer"><GitHub /></a>

@@ -7,9 +7,19 @@
         margin: 0 auto
 
         .caption
-            img
+            .img-container
+                width: 600px
+                height: 400px
+                overflow: hidden
+                margin: auto
                 @include small
                     width: 100%
+                img
+                    position: relative
+                    // left: -22%
+                    @include small
+                        width: inherit
+                        left: 0
             .link
                 margin: 0px 20px
                 opacity: 0.75
