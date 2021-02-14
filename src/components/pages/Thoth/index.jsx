@@ -14,7 +14,7 @@ export const ThothApi = ({ title = "Thoth API" }) => {
                     <h2>{title}</h2>
                 </div>
                 <div className="caption" style={{ textAlign: "center", padding: "30px 0px" }}>
-                    <img src="/portfolio/static/thoth-logo.svg" style={{ height: "300px", padding: "2rem" }} alt="" />
+                    <img src="/static/thoth-logo.svg" style={{ height: "300px", padding: "2rem" }} alt="" />
                     <div style={{ padding: "20px 0px 0px" }}>
                         <a className="link" href="https://github.com/CodersSA/API-Thoth" target="_BLANK" rel="noreferrer"><GitHub /></a>
                     </div>
