@@ -18,7 +18,9 @@ export const Weathere = ({ title = "Weathere" }) => {
                     <h2>{title}</h2>
                 </div>
                 <div className="caption" style={{ textAlign: "center", padding: "30px 0px" }}>
-                    <img src="https://dummyimage.com/600x400/#ccc/ffffff" alt="" />
+                    <div style={{ width: "600px", height: "400px", overflow: "hidden", margin: "auto" }}>
+                        <img style={{ position: "relative", left: "-22%" }} src="/static/weathere.png" alt="" />
+                    </div>
                     <div style={{ padding: "20px 0px 0px" }}>
                         <a className="link" href="https://github.com/ErixMV/WeaThere" target="_BLANK" rel="noreferrer"><GitHub /></a>
                         <a className="link" href="https://weathere-app.herokuapp.com" target="_BLANK" rel="noreferrer"><Language /></a>
