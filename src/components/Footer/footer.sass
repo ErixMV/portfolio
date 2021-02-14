@@ -1,3 +1,5 @@
+@import "../../mixins"
+    
 #footer 
     background-color: #111
     padding: 20px 0px
@@ -10,8 +12,15 @@
 
         .footer-credits
             align-self: center
-            p
+            @include small
+                text-align: center
+                margin: auto
+
+            p, span
                 font-size: 1rem
+
+            p
+                display: inline-block
         .footer-icons
             svg
                 margin: 0px 10px

@@ -8,12 +8,12 @@ export const SmallMenu = () => {
     }
 
     return (
-        <Menu right>
+        <Menu disableAutoFocus right>
             <a id="home" className="menu-item" href="/#banner">Home</a>
             <a id="about" className="menu-item" href="/#e-projects">Projects</a>
             <a id="contact" className="menu-item" href="/#e-about">About</a>
             <a id="contact" className="menu-item" href="/#e-contact">Contact</a>
-            <a onClick={showSettings} className="menu-item--small" href="/">Close Menu</a>
+            {/* <a onClick={showSettings} className="menu-item--small" href="/">Close Menu</a> */}
         </Menu>
     )
 }
