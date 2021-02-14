@@ -1,8 +1,9 @@
 import "./contact.sass"
 import { LinkedIn, GitHub } from '@material-ui/icons';
+import Media from "react-media";
 export const Contact = () => {
     return (
-        <div id="contact" className="section">
+        <div id="e-contact" className="section">
             <div className="section-title">
                 Get in touch
             </div>
@@ -12,8 +13,17 @@ export const Contact = () => {
                     If you want to discuss a project, an opportunity or just say hi, my inbox will always be available!
                 
                     <div className="link-mail">
-                        <div className="btn-under-effect"><span className="noselect"><a href="mailto:erixmv022@gmail.com">erixmv022@gmail.com</a></span><div className="circle"></div></div>
-                        {/* <a href="mailto:erixmv022@gmail.com">erixmv022@gmail.com</a> */}
+                        <div className="btn-under-effect">
+                            <span className="noselect">
+                                <Media query={{ maxWidth: 749 }}>
+                                    <a href="mailto:erixmv022@gmail.com">Send message</a>
+                                </Media>
+                                <Media query={{ minWidth: 750 }}>
+                                    <a href="mailto:erixmv022@gmail.com">erixmv022@gmail.com</a>
+                                </Media>
+                            </span>
+                            <div className="circle"></div>
+                        </div>
                     </div>
                 </div>
                 <div className="contact-links">

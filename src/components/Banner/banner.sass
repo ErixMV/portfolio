@@ -33,7 +33,7 @@
             align-self: center
             width: 70%
             @include small
-                width: 85%
+                width: 100%
 
             .banner-data
                 text-align: center
@@ -60,6 +60,7 @@
 
                 .subtitle
                     margin: 0px 10px
+                    
 
                     &:after, &:before
                         content: ""
@@ -79,6 +80,8 @@
                         padding: 5px 10px
                         @include small
                             display: block
+                            width: 100%
+                            margin: 0
 
                         button
                             padding: inherit
@@ -97,6 +100,7 @@
 
                             @include small
                                 width: 200px
+                                max-width: 100%
 
                             &:hover
                                 -webkit-background-clip: border-box

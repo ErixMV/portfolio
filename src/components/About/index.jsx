@@ -25,7 +25,7 @@ import {ReactComponent as PhotoshopIcon } from "../../assets/photoshop.svg"
 
 export const About = () => {
     return (
-        <div id="about" className="section">
+        <div id="e-about" className="section">
             <div className="section-title">
                 About me
             </div>

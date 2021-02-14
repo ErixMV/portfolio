@@ -62,7 +62,7 @@ const renderProjects = ({ title, desc, url, img, svg, web = "/", github }, i) =>
 export const Projects = () => {
 
     return (
-        <section id="projects">
+        <section id="e-projects">
             <div className="projects-container">
                 {dataProjects.map(renderProjects)}
             </div>

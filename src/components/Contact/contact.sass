@@ -1,7 +1,12 @@
-#contact
+@import "../../mixins"
+    
+#e-contact
     width: 85%
     margin: 0 auto
     padding: 50px 0px
+    @include small
+        width: 100%
+        padding: 0% 5%
 
     .section-title
         font-size: 2rem
@@ -13,10 +18,14 @@
         background: linear-gradient(to bottom,#fff, #666)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+        @include small
+            text-align: center
 
     .section-body
         display: flex
         justify-content: space-evenly
+        @include small
+            flex-direction: column
 
         div
             align-self: center
@@ -28,6 +37,9 @@
             width: 85%
             padding-right: 30px
             line-height: 1.5
+            @include small
+                width: 100%
+                padding: 0
 
             .link-mail
                 text-align: center
@@ -55,6 +67,9 @@
                     align-items: center
                     justify-content: center
                     cursor: pointer
+                    @include small
+                        max-width: 100%
+                        min-width: 100%
 
                     .circle
                         width: 5px
@@ -111,8 +126,14 @@
             border-left: 1px solid #ccc
             padding-left: 30px
             height: 100%
+            @include small
+                border: none
+                width: 100%
 
             .links
+                @include small
+                    display: flex
+                    justify-content: space-around
                 a
                     background: transparent
                     width: fit-content
