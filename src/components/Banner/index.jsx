@@ -8,7 +8,7 @@ export const Banner = () => {
             <div className="opacity">
                 <div className="banner-content">
                     <div className="banner-data">
-                        <img src="/static/erix.png" alt="profile" />
+                        <img src="/portfolio/static/erix.png" alt="profile" />
                         <div className="name">Erix Mamani Villacresis</div>
                         <div className="subtitle">Web Developer</div>
                         <div className="primary-buttons">

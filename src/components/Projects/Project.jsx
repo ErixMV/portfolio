@@ -15,7 +15,7 @@ export const Project = ({ title, desc, img, url, svg, i, github, web }) => {
     return (
         <figure className="project" data-folio={i} data-link="WheThere" data-aos="fade-up" >
 
-            <img src={`/static/${img ? img : svg}`} style={img ? {} : { height: "inherit", padding: "3rem", background: "radial-gradient(#333, black)" }} alt="1" />
+            <img src={`/portfolio/static/${img ? img : svg}`} style={img ? {} : { height: "inherit", padding: "3rem", background: "radial-gradient(#333, black)" }} alt="1" />
             <figcaption className="project__caption">
                 <div className="project-title">
                     {title}
