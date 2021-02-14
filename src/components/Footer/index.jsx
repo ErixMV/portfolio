@@ -7,7 +7,7 @@ export const Footer = () => {
     return (
         <footer id="footer">
             <div className="footer-inner">
-                <div className="footer-credits">
+                <div className="footer-credits" style={{ margin: "auto" }}>
                     <p>© 2021 Erix Mamani Villacresis.</p>
                     <Media query={{ maxWidth: 749 }}>
                         <p> All rights reserved.</p>
