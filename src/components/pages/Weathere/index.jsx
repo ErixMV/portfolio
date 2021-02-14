@@ -5,10 +5,14 @@ import { ReactComponent as ExpressIcon } from "../../../assets/express.svg"
 import { ReactComponent as AlgoliaIcon } from "../../../assets/algolia.svg"
 import { ReactComponent as WeatherbitIcon } from "../../../assets/weatherbit.svg"
 import { GitHub, Language } from '@material-ui/icons';
+import { useEffect } from 'react';
 
 export const Weathere = ({ title = "Weathere" }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
-        <div id="weathere">
+        <div id="weathere" >
             <div className="project-page">
                 <div className="project-page__title">
                     <h2>{title}</h2>
@@ -85,6 +89,6 @@ export const Weathere = ({ title = "Weathere" }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

@@ -1,12 +1,16 @@
 import "./thoth.sass"
 
 import { ReactComponent as ExpressIcon } from "../../../assets/express.svg"
-import {ReactComponent as TypeScriptIcon } from "../../../assets/typescript.svg"
-import {ReactComponent as MongoIcon } from "../../../assets/mongo.svg"
-import {ReactComponent as PassportIcon } from "../../../assets/passport.svg"
+import { ReactComponent as TypeScriptIcon } from "../../../assets/typescript.svg"
+import { ReactComponent as MongoIcon } from "../../../assets/mongo.svg"
+import { ReactComponent as PassportIcon } from "../../../assets/passport.svg"
 import { GitHub } from '@material-ui/icons';
+import { useEffect } from "react";
 
 export const ThothApi = ({ title = "Thoth API" }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div id="thoth">
             <div className="project-page">
@@ -29,15 +33,15 @@ export const ThothApi = ({ title = "Thoth API" }) => {
                                 Main Express API for all projects from the organization.
                             </p>
                             <p>
-                                This server gets requests from all the web apps of Coders. 
+                                This server gets requests from all the web apps of Coders.
                             </p>
                             <p>
-                            It has an authorization system, cookie control, password encryption and database management depending on the project that makes the request. 
+                                It has an authorization system, cookie control, password encryption and database management depending on the project that makes the request.
                             </p>
                             <p>
-                            Thoth API has been developed for <a target="_BLANK" rel="noreferrer" style={{ fontSize: "inherit", textDecoration: "underline" }} href="https://github.com/CodersSA">Coders</a>
+                                Thoth API has been developed for <a target="_BLANK" rel="noreferrer" style={{ fontSize: "inherit", textDecoration: "underline" }} href="https://github.com/CodersSA">Coders</a>
                             </p>
-                            
+
                         </div>
                         <div>
 

@@ -1,5 +1,6 @@
 import "./theblackswan.sass"
 
+import { useEffect } from "react"
 import { ReactComponent as ReactIcon } from "../../../assets/react.svg"
 import { ReactComponent as ExpressIcon } from "../../../assets/express.svg"
 import { ReactComponent as SassIcon } from "../../../assets/sass.svg"
@@ -8,6 +9,9 @@ import { ReactComponent as MaterialIcon } from "../../../assets/material.svg"
 import { GitHub, Language } from '@material-ui/icons';
 
 export const TheBlackSwan = ({ title = "The Black Swan" }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div id="theblackswan">
             <div className="project-page">
