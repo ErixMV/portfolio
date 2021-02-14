@@ -10,12 +10,14 @@
     // background: green
     height: 100vh
     min-height: 700px
+    width: 100%
     // background: #946b6b
     // background: -webkit-linear-gradient(to left, #434343, #000000)
     // background: linear-gradient(to left, #434343, #000000)
     background-image: url(/static/images/bg.jpg)
     background-position: center
     background-size: cover
+    overflow: hidden
     @include large
         -webkit-animation: bgLoad 2s
         -moz-animation: bgLoad 2s
@@ -25,7 +27,7 @@
 
     .opacity
         background: rgba(0, 0, 0, 0.7)
-        width: 100%
+        width: inherit
         height: 100%
         display: flex
         justify-content: center

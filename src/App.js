@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Header /> */}
+        <Header />
         <Switch>
           <Route path="/weathere" component={Weathere} />
           <Route path="/the-black-swan" component={TheBlackSwan} />
