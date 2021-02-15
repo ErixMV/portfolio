@@ -1,5 +1,5 @@
 @import "./mixins"
-  
+
 *, *:after, *:before
   margin: 0
   padding: 0
@@ -23,3 +23,22 @@ html
 
 a
   text-decoration: none
+
+body::-webkit-scrollbar-track
+
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+  // border-radius: 10px
+  background-color: #333
+  // border-left: 1px solid #fff
+
+body::-webkit-scrollbar
+
+  width: 12px
+  background-color: #333
+
+body::-webkit-scrollbar-thumb
+
+  // border-radius: 10px
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+  background-color: #999
+  // border-left: 1px solid #fff

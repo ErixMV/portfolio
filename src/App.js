@@ -11,6 +11,7 @@ import { ThothApi } from './components/pages/Thoth';
 import { Contact } from './components/Contact/index';
 import { About } from './components/About/index';
 
+
 function App() {
   return (
     <Router>
