@@ -85,12 +85,10 @@ export const Weathere = ({ title = "Weathere" }) => {
                                     <WeatherbitIcon style={{ borderRadius: "15px" }} />
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
